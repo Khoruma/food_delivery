@@ -16,7 +16,7 @@ class PopularFoodDetail extends StatelessWidget {
             child: Container(
               width: double.maxFinite,
               height: Dimensions.popularFoodImgSize,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: AssetImage("assets/image/food0.png"))),
@@ -55,7 +55,7 @@ class PopularFoodDetail extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    AppColumn(text: "Chinese Side"),
+                    const AppColumn(text: "Chinese Side"),
                     SizedBox(height: Dimensions.height20),
                     BigText(text: "Introduce"),
                     SizedBox(height: Dimensions.height20),
@@ -98,11 +98,11 @@ class PopularFoodDetail extends StatelessWidget {
                   color: Colors.white),
               child: Row(
                 children: [
-                  Icon(Icons.remove, color: AppColors.signColor),
+                  const Icon(Icons.remove, color: AppColors.signColor),
                   SizedBox(width: Dimensions.width10 / 2),
                   BigText(text: "0"),
                   SizedBox(width: Dimensions.width10 / 2),
-                  Icon(Icons.add, color: AppColors.signColor)
+                  const Icon(Icons.add, color: AppColors.signColor)
                 ],
               ),
             ),
